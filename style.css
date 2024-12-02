@@ -1,0 +1,28 @@
+.image-container {
+  width: 100%; /* Makes the container full width */
+  aspect-ratio: 16 / 9; /* Ensures a consistent aspect ratio */
+  overflow: hidden; /* Hides overflowing parts of the image */
+}
+
+.card-image {
+  width: 100%; /* Makes the image full width */
+  height: 100%; /* Ensures the image covers the container */
+  object-fit: cover; /* Crops or scales the image uniformly */
+}
+
+.spinner {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: 10; /* Ensure it appears on top of the card */
+}
+
+.fade-out {
+  opacity: 0;
+  transform: scale(1.25) rotate(45deg);
+  transition: opacity 0.5s, transform 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: scale(1.25) rotate(-45deg);
+  transition: opacity 0.5s, transform 0.5s ease-in;
+}
